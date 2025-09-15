@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <section class="home flex justify-center items-center min-h-[100vh] w-full">
+      <div
+        class="quiz_box m-[10px] relative z-[99] rounded-[15px] w-full max-w-[672px] min-h-[398px] bg-[#fff] p-[48px]"
+      >
+        <div class="text-center space-y-8">
+          <div class="space-y-4">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#00a651] to-[#0070c0] text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-globe w-8 h-8"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <path
+                  d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"
+                ></path>
+                <path d="M2 12h20"></path>
+              </svg>
+            </div>
+            <div>
+              <h1 class="text-3xl font-bold text-gray-800 mb-2">
+                Pension Quiz
+              </h1>
+              <p class="text-lg text-gray-600">
+                Choose your preferred language
+              </p>
+              <p class="text-lg text-gray-600 mt-2">Kies je gewenste taal</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <a
+              href="./quiz.html"
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-primary/90 px-4 py-2 has-[&gt;svg]:px-3 h-20 text-lg bg-gradient-to-r from-[#00a651] to-[#0070c0] hover:from-[#008a45] hover:to-[#005a9f] text-white"
+            >
+              <div class="flex flex-col items-center gap-2">
+                <span class="text-2xl">🇳🇱</span><span>Nederlands</span>
+              </div>
+            </a>
+            <a
+              href="./quiz.html"
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-primary/90 px-4 py-2 has-[&gt;svg]:px-3 h-20 text-lg bg-gradient-to-r from-[#00a651] to-[#0070c0] hover:from-[#008a45] hover:to-[#005a9f] text-white"
+            >
+              <div class="flex flex-col items-center gap-2">
+                <span class="text-2xl">🇬🇧</span><span>English</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

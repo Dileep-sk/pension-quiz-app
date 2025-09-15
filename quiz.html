@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pension Quiz</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <section class="home min-h-screen w-full relative">
+      <div class="relative z-10">
+        <!-- Header -->
+        <header
+          class="bg-white/95 backdrop-blur-sm border-b border-white/20 px-8 py-4"
+        >
+          <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex-1 text-center">
+              <h1 class="text-2xl font-bold text-[#00a651]">Pension Quiz</h1>
+              <p class="text-sm text-[#0070c0]">
+                brew your knowledge about pension
+              </p>
+            </div>
+            <button
+              class="h-8 px-3 rounded-md bg-white/95 border border-white/30 hover:bg-[#00a651]/10"
+            >
+              <img src="./assets/images/language.svg" alt="Language" />
+            </button>
+          </div>
+        </header>
+
+        <!-- Main -->
+        <main class="container main mx-auto px-8 py-8 max-w-4xl">
+          <div class="space-y-6">
+            <div class="flex gap-8 items-start queation_box">
+              <!-- Question Card -->
+              <div class="flex-1">
+                <div
+                  class="rounded-xl p-8 bg-white/95 backdrop-blur-sm shadow-xl"
+                >
+                  <div class="text-center space-y-6">
+                    <div
+                      class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-[#0070c0] text-white mb-4"
+                    >
+                      <span class="font-bold">1</span>
+                    </div>
+                    <h2
+                      class="text-xl font-semibold text-gray-800 leading-relaxed"
+                    >
+                      What is the current state pension age in the Netherlands?
+                    </h2>
+                  </div>
+                  <div class="mt-6 space-y-3 all_btn_disabled">
+                    <button
+                      class="w-full valid p-4 text-left border-2 border-gray-200 rounded-md hover:border-[#00a651]/50 hover:bg-[#00a651]/5 transition"
+                    >
+                      <div class="flex items-center gap-3">
+                        <span
+                          class="w-[15px] h-[15px] rounded-full round border border-[#99a1af]"
+                        ></span>
+                        <span class="flex-1 text-[14px] text-[#000] font-[600]"
+                          >65 years</span
+                        >
+                      </div>
+                    </button>
+                    <button
+                      class="w-full p-4 text-left border-2 border-gray-200 rounded-md hover:border-[#00a651]/50 hover:bg-[#00a651]/5 transition"
+                    >
+                      <div class="flex items-center gap-3">
+                        <span
+                          class="w-[15px] h-[15px] rounded-full border border-[#99a1af]"
+                        ></span>
+                        <span class="flex-1 text-[14px] text-[#000] font-[600]"
+                          >66 years and 4 months</span
+                        >
+                      </div>
+                    </button>
+                    <button
+                      class="w-full invalid p-4 text-left border-2 border-gray-200 rounded-md hover:border-[#00a651]/50 hover:bg-[#00a651]/5 transition"
+                    >
+                      <div class="flex items-center gap-3">
+                        <span
+                          class="w-[15px] h-[15px] round rounded-full border border-[#99a1af]"
+                        ></span>
+                        <span class="flex-1 text-[14px] text-[#000] font-[600]"
+                          >67 years</span
+                        >
+                      </div>
+                    </button>
+                    <button
+                      class="w-full p-4 text-left border-2 border-gray-200 rounded-md hover:border-[#00a651]/50 hover:bg-[#00a651]/5 transition"
+                    >
+                      <div class="flex items-center gap-3">
+                        <span
+                          class="w-[15px] h-[15px] rounded-full border border-[#99a1af]"
+                        ></span>
+                        <span class="flex-1 text-[14px] text-[#000] font-[600]"
+                          >68 years</span
+                        >
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-shrink-0">
+                <div class="flex flex-col items-center space-y-2">
+                  <div class="relative">
+                    <svg
+                      width="80"
+                      height="120"
+                      viewBox="0 0 80 120"
+                      class="drop-shadow-md"
+                    >
+                      <!-- outline -->
+                      <path
+                        d="M15 20 L15 100 Q15 110 25 110 L55 110 Q65 110 65 100 L65 20 Z"
+                        fill="transparent"
+                        stroke="#8B4513"
+                        stroke-width="2"
+                      ></path>
+
+                      <defs>
+                        <linearGradient
+                          id="beerGradient"
+                          x1="0%"
+                          y1="0%"
+                          x2="0%"
+                          y2="100%"
+                        >
+                          <stop offset="0%" stop-color="#F4A460"></stop>
+                          <stop offset="50%" stop-color="#DAA520"></stop>
+                          <stop offset="100%" stop-color="#B8860B"></stop>
+                        </linearGradient>
+                      </defs>
+
+                      <path
+                        id="beerPath"
+                        d="M16 83.33 L16 100 Q16 109 25 109 L55 109 Q64 109 64 100 L64 83.33 Z"
+                        fill="url(#beerGradient)"
+                      ></path>
+
+                      <ellipse
+                        id="beerFoam"
+                        cx="40"
+                        cy="81.66"
+                        rx="24"
+                        ry="3.33"
+                        fill="#FFF8DC"
+                        opacity="0.9"
+                      ></ellipse>
+
+                      <!-- rim + handle -->
+                      <ellipse
+                        cx="40"
+                        cy="20"
+                        rx="25"
+                        ry="3"
+                        fill="transparent"
+                        stroke="#8B4513"
+                        stroke-width="2"
+                      ></ellipse>
+                      <path
+                        d="M65 35 Q75 35 75 45 L75 55 Q75 65 65 65"
+                        fill="transparent"
+                        stroke="#8B4513"
+                        stroke-width="2"
+                      ></path>
+                    </svg>
+
+                    <div class="absolute top-[40%] inset-0 pointer-events-none">
+                      <div
+                        class="absolute w-1 h-1 bg-white/60 rounded-full animate-pulse"
+                        style="
+                          left: 30%;
+                          top: 45%;
+                          animation-delay: 0s;
+                          animation-duration: 2s;
+                        "
+                      ></div>
+                      <div
+                        class="absolute w-1 h-1 bg-white/60 rounded-full animate-pulse"
+                        style="
+                          left: 38%;
+                          top: 45%;
+                          animation-delay: 0.5s;
+                          animation-duration: 2s;
+                        "
+                      ></div>
+                      <div
+                        class="absolute w-1 h-1 bg-white/60 rounded-full animate-pulse"
+                        style="
+                          left: 46%;
+                          top: 45%;
+                          animation-delay: 1s;
+                          animation-duration: 2s;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="text-center text-sm">
+                    <div id="stepLabel" class="font-medium text-[#FFF]">
+                      5 of 6
+                    </div>
+                    <div id="percentLabel" class="text-xs text-[#00a651]">
+                      83% filled
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="flex justify-between items-center max-w-[720px] w-full">
+              <button
+                id="decBtn"
+                class="flex items-center gap-2 h-9 px-4 cursor-pointer py-2 rounded-md bg-[#00a651] hover:bg-[#008a45] text-white border border-[#00a651]"
+              >
+                <img src="./assets/images/left_Arrow.svg" alt="Previous" />
+                Previous
+              </button>
+              <div class="flex gap-2">
+                <div
+                  class="w-3 h-3 rounded-full border-2 bg-[#0070c0] border-[#0070c0]"
+                ></div>
+                <div
+                  class="w-3 h-3 rounded-full border-2 bg-white border-gray-300"
+                ></div>
+                <div
+                  class="w-3 h-3 rounded-full border-2 bg-white border-gray-300"
+                ></div>
+                <div
+                  class="w-3 h-3 rounded-full border-2 bg-white border-gray-300"
+                ></div>
+                <div
+                  class="w-3 h-3 rounded-full border-2 bg-white border-gray-300"
+                ></div>
+                <div
+                  class="w-3 h-3 rounded-full border-2 bg-white border-gray-300"
+                ></div>
+              </div>
+              <button
+                id="incBtn"
+                class="flex cursor-pointer items-center gap-2 h-9 px-4 py-2 rounded-md bg-[#00a651] hover:bg-[#008a45] text-white"
+              >
+                Next
+                <img src="./assets/images/right_Arrow.svg" alt="Next" />
+              </button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    // initial state
+    let current = 1;
+    const total = 6;
+
+    const steps = Array.from(document.querySelectorAll(".beer-step"));
+    const stepLabel = document.getElementById("stepLabel");
+    const percentLabel = document.getElementById("percentLabel");
+    const incBtn = document.getElementById("incBtn");
+    const decBtn = document.getElementById("decBtn");
+
+    function render(step) {
+      if (step < 1) step = 1;
+      if (step > total) step = total;
+
+      const pct = step / total;
+
+      // mug inner box
+      const topY = 20,
+        bottomY = 100,
+        innerH = bottomY - topY;
+
+      // new top of the beer
+      const liquidTopY = bottomY - innerH * pct;
+
+      // update path (liquid body)
+      const path = document.querySelector("#beerPath");
+      const d = `M16 ${
+        liquidTopY - -2
+      } L16 100 Q16 109 25 109 L55 109 Q64 109 64 100 L64 ${liquidTopY - -2} Z`;
+      path.setAttribute("d", d);
+
+      // update ellipse (foam cap)
+      const ellipse = document.querySelector("#beerFoam");
+      ellipse.setAttribute("cy", liquidTopY - -3);
+      ellipse.setAttribute("ry", (innerH / total) * 0.2); // scale foam thickness
+
+      // labels
+      stepLabel.textContent = `${step} of ${total}`;
+      percentLabel.textContent = `${Math.floor(pct * 100)}% filled`;
+
+      current = step;
+    }
+
+    // animate with Tailwind’s classes you already sprinkled in
+    function increaseStep() {
+      if (current === 6) {
+        // redirect when you’re at the last step
+        window.location.href = "quiz-complated.html";
+        return;
+      }
+
+      render(current + 1);
+    }
+
+    function decreaseStep() {
+      render(current - 1);
+    }
+
+    // hook up button
+    incBtn.addEventListener("click", increaseStep);
+    decBtn.addEventListener("click", decreaseStep);
+
+    // initial draw
+    render(current);
+  </script>
+</html>
